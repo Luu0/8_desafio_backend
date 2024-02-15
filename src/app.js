@@ -20,6 +20,12 @@ import config from "./Config/config.js";
 const app = express();
 const SERVER_PORT = config.port;
 
+console.log(config);
+
+
+// const SERVER_PORT = 8080;
+
+
 mongoose.connect('mongodb+srv://Lu0:Lu0@ecomerce.zb53nge.mongodb.net/?retryWrites=true&w=majority')
 .then(() => {
     console.log('Connection success');
